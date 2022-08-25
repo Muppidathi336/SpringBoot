@@ -1,0 +1,1 @@
+An example that illustrate creating web application using spring boot. that get multiple data from the client and save that to postgres db.
