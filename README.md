@@ -66,8 +66,9 @@ POM for jsp,
 ##### To accept data from client:
 ===========================
 in url : http://localhost:8080/home?name=gafsg
-using httpsession:
-======
+
+###### using httpsession:
+========================
 jsp:
 <body>
 welcome ${name}
@@ -85,8 +86,8 @@ public String home(String name, HttpSession session)
 	return "home.jsp";
 }
 }
-using ModelAndView:
-=============
+###### using ModelAndView:
+=========================
 @Controller
 public class ControllerDemo 
 {
@@ -129,7 +130,7 @@ public ModelAndView home(User user)
 Add a user model to group multiple data under a class
 
 ##### To store client data:
-======================
+=========================
 url: http://localhost:8080/home?id=1&username=bbhj
 page will have text box to capture data, on submit it will get saved in the db.
 <body>
